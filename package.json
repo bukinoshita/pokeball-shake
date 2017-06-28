@@ -1,0 +1,33 @@
+{
+  "name": "pokeball-shake",
+  "description": "Algorithm to determine how many times pokeball shakes",
+  "version": "0.0.0",
+  "main": "index.js",
+  "keywords": [
+    "pokeball",
+    "pokemon",
+    "pokeball-shake",
+    "algorithm"
+  ],
+  "repository": "https://github.com/bukinoshita/pokeball-shake.git",
+  "author": "Bu Kinoshita <bukinoshita@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "dependencies": {
+    "pokemon-f": "^0.0.1"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "space": true,
+    "semicolon": false,
+    "esnext": true,
+    "rules": {
+      "no-mixed-operators": 0
+    }
+  }
+}
