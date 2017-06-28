@@ -60,7 +60,7 @@ Type: `number`<br/>
 Default: `0`<br/>
 Options:
 - `12` if poisoned, burned, or paralyzed
-- 25 if frozen or asleep
+- `25` if frozen or asleep
 
 
 ## Related
