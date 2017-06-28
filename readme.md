@@ -57,11 +57,10 @@ Use [pokemon-f](https://github.com/bukinoshita/pokemon-f) to calculate `f`.
 #### statusAilment
 
 Type: `number`<br/>
+Default: `0`<br/>
 Options:
 - `12` if poisoned, burned, or paralyzed
 - 25 if frozen or asleep
-Default: `0`<br/>
-Required
 
 
 ## Related
