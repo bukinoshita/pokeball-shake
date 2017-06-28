@@ -37,12 +37,12 @@ Pokemon's catch rate
 #### ballMod
 
 Type: `number`<br/>
+Required<br/>
 Options:
 - Poké Ball: `255`
 - Great Ball: `200`
 - Ultra Ball: `150`
 - Safari Ball: `150`
-Required
 
 Ball mod value
 
