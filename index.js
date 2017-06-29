@@ -4,15 +4,15 @@ const getPokeball = require('get-pokeball')
 
 module.exports = async (catchRate, pokeball, f, statusAilment = 0) => {
   if (typeof catchRate !== 'number') {
-    throw new TypeError('Catch Rate is required and should be a number.')
+    throw new TypeError('Catch Rate is required and should be a number')
   }
 
   if (typeof pokeball !== 'string') {
-    throw new TypeError('Pokeball is required and should be a string.')
+    throw new TypeError('Pokeball is required and should be a string')
   }
 
   if (typeof f !== 'number' || f > 255 || f < 1) {
-    throw new TypeError('f is required and should be a number.')
+    throw new TypeError('f is required and should be a number between 1-255')
   }
 
   const ball = await getPokeball(pokeball)
