@@ -38,8 +38,8 @@ Pokemon's catch rate
 #### pokeball
 
 Type: `string`<br/>
-Required<br/>
-Options: `pokeball`, `greatball`, `ultraball` and `safariball`
+Options: `pokeball`, `greatball`, `ultraball` and `safariball`<br/>
+Required
 
 Pokeball's name
 
