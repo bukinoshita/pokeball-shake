@@ -15,36 +15,33 @@ $ npm install --save pokeball-shake
 const pokeballShake = require('pokeball-shake')
 const pokemonF = require('pokemon-f')
 
-const f = pokemonF(35, 12, 29)
-pokeballShake(163, 255, f)
-// => Pokeball shaked `1` time before pokemon goes free.
+const f = await pokemonF(35, 'greatball', 29)
+
+pokeballShake(163, 'greatball', f)
+// => Pokeball shaked `2` time before pokemon goes free.
 ```
 
 
 ## API
 
-### pokeballShake(catchRate, ballMod, f, [statusAilment])
+### pokeballShake(catchRate, pokeball, f, [statusAilment])
 
 returns a `promise`
 
 #### catchRate
 
-Type: `number`<br/>
+Type: `integer`<br/>
 Required
 
 Pokemon's catch rate
 
-#### ballMod
+#### pokeball
 
-Type: `number`<br/>
+Type: `string`<br/>
 Required<br/>
-Options:
-- Poké Ball: `255`
-- Great Ball: `200`
-- Ultra Ball: `150`
-- Safari Ball: `150`
+Options: `pokeball`, `greatball`, `ultraball` and `safariball`
 
-Ball mod value
+Pokeball's name
 
 #### f
 

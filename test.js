@@ -8,8 +8,7 @@ test(async t => {
   const catchRate = 163
   const hpMax = 35
   const hpCurrent = 29
-  const ball = 12
-  const ballMod = 255
+  const f = await pokemonF(hpMax, 'pokeball', hpCurrent)
 
-  t.is(await m(catchRate, ballMod, pokemonF(hpMax, ball, hpCurrent)), 1)
+  t.is(await m(catchRate, 'pokeball', f), 1)
 })

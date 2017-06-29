@@ -1,34 +1,35 @@
 'use strict'
 
-module.exports = (catchRate, ballMod, f, statusAilment = 0) => {
-  return new Promise((resolve, reject) => {
-    if (typeof catchRate !== 'number') {
-      reject(new TypeError('Catch Rate is required and should be a number.'))
-    }
+const getPokeball = require('get-pokeball')
 
-    if (typeof ballMod !== 'number' || ballMod > 255 || ballMod < 150) {
-      reject(new TypeError('Ball mod is required and should be a number.'))
-    }
+module.exports = async (catchRate, pokeball, f, statusAilment = 0) => {
+  if (typeof catchRate !== 'number') {
+    throw new TypeError('Catch Rate is required and should be a number.')
+  }
 
-    if (typeof f !== 'number' || ballMod > 255 || ballMod < 1) {
-      reject(new TypeError('f is required and should be a number.'))
-    }
+  if (typeof pokeball !== 'string') {
+    throw new TypeError('Pokeball is required and should be a string.')
+  }
 
-    const d = catchRate * 100 / ballMod
-    const x = d * f / 255 + statusAilment
+  if (typeof f !== 'number' || f > 255 || f < 1) {
+    throw new TypeError('f is required and should be a number.')
+  }
 
-    if (d >= 256) {
-      resolve(3)
-    }
+  const ball = await getPokeball(pokeball)
+  const d = catchRate * 100 / ball.value.d
+  const x = d * f / 255 + statusAilment
 
-    if (x < 10) {
-      resolve(0)
-    } else if (x < 30) {
-      resolve(1)
-    } else if (x < 70) {
-      resolve(2)
-    }
+  if (d >= 256) {
+    return 3
+  }
 
-    resolve(3)
-  })
+  if (x < 10) {
+    return 0
+  } else if (x < 30) {
+    return 1
+  } else if (x < 70) {
+    return 2
+  }
+
+  return 3
 }
