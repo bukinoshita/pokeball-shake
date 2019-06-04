@@ -20,7 +20,7 @@
     "pokemon-f": "^0.0.1"
   },
   "devDependencies": {
-    "ava": "0.19.1",
+    "ava": "0.25.0",
     "xo": "0.18.2"
   },
   "xo": {
