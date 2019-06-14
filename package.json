@@ -16,7 +16,7 @@
     "test": "xo && ava"
   },
   "dependencies": {
-    "get-pokeball": "^0.0.1",
+    "get-pokeball": "^0.0.2",
     "pokemon-f": "^0.0.1"
   },
   "devDependencies": {
