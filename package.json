@@ -20,20 +20,32 @@
     "lint": "xo"
   },
   "dependencies": {
-    "get-pokeball": "^0.0.1",
-    "pokemon-f": "^0.0.1"
+    "get-pokeball": "^0.0.2",
+    "pokemon-f": "^0.0.2"
   },
   "devDependencies": {
-    "ava": "0.25.0",
-    "xo": "0.18.2"
+    "ava": "^2.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2",
+    "xo": "^0.24.0"
   },
   "xo": {
-    "space": true,
-    "semicolon": false,
-    "esnext": true,
-    "rules": {
-      "no-mixed-operators": 0,
-      "object-curly-spacing": 0
+    "extends": [
+      "prettier"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --semi false --single-quote --write",
+      "yarn lint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
   }
 }
