@@ -24,9 +24,13 @@ const pokeballShake = async (catchRate, pokeball, f, statusAilment = 0) => {
 
   if (x < 10) {
     return 0
-  } else if (x < 30) {
+  }
+
+  if (x < 30) {
     return 1
-  } else if (x < 70) {
+  }
+
+  if (x < 70) {
     return 2
   }
 
