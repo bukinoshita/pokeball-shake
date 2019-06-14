@@ -1,8 +1,7 @@
-'use strict'
-
+// Packages
 const getPokeball = require('get-pokeball')
 
-module.exports = async (catchRate, pokeball, f, statusAilment = 0) => {
+const pokeballShake = async (catchRate, pokeball, f, statusAilment = 0) => {
   if (typeof catchRate !== 'number') {
     throw new TypeError('Catch Rate is required and should be a number')
   }
@@ -16,8 +15,8 @@ module.exports = async (catchRate, pokeball, f, statusAilment = 0) => {
   }
 
   const ball = await getPokeball(pokeball)
-  const d = catchRate * 100 / ball.value.d
-  const x = d * f / 255 + statusAilment
+  const d = (catchRate * 100) / ball.value.d
+  const x = (d * f) / 255 + statusAilment
 
   if (d >= 256) {
     return 3
@@ -33,3 +32,5 @@ module.exports = async (catchRate, pokeball, f, statusAilment = 0) => {
 
   return 3
 }
+
+module.exports = pokeballShake
