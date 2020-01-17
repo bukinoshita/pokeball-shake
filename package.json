@@ -20,7 +20,7 @@
     "lint": "xo"
   },
   "dependencies": {
-    "get-pokeball": "^0.0.2",
+    "get-pokeball": "^0.0.3",
     "pokemon-f": "^0.0.2"
   },
   "devDependencies": {

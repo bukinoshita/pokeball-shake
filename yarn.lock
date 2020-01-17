@@ -2069,10 +2069,15 @@ get-own-enumerable-property-symbols@^3.0.0:
   resolved "https://registry.yarnpkg.com/get-own-enumerable-property-symbols/-/get-own-enumerable-property-symbols-3.0.0.tgz#b877b49a5c16aefac3655f2ed2ea5b684df8d203"
   integrity sha512-CIJYJC4GGF06TakLg8z4GQKvDsx9EMspVxOYih7LerEL/WosUnFIww45CGfxfeKHqlg3twgUrYRT1O3WQqjGCg==
 
-get-pokeball@0.0.2, get-pokeball@^0.0.2:
+get-pokeball@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/get-pokeball/-/get-pokeball-0.0.2.tgz#58aab1302b763a43848dbf57aa476fe60bb5d587"
   integrity sha512-nq5sWP+AclHhwlJ44NNZi59pQTtQYOlDRooUkJLmoAzSFakVwEIVzGfOQK0HTPVS9Jyp+FfsI3VBGjTYoJlMeA==
+
+get-pokeball@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/get-pokeball/-/get-pokeball-0.0.3.tgz#77c8887f1d72dad89cc363e0d74fba81c3abf5d9"
+  integrity sha512-BDu+8MzNASU8+UT4JkfWqemjUtYADLV9yNUNcnIsM5At+yyp2ZTqmjyahH9GQARyf14CskGpKlRPKuOcXYX3ig==
 
 get-port@^5.0.0:
   version "5.0.0"
