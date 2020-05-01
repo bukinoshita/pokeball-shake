@@ -24,11 +24,9 @@ pokeballShake(163, 'greatball', f)
 
 ### pokeballShake(catchRate, pokeball, f, [statusAilment])
 
-returns a `promise`
-
 #### catchRate
 
-Type: `integer`<br/>
+Type: `number`<br/>
 Required
 
 Pokemon's catch rate
@@ -43,7 +41,7 @@ Pokeball's name
 
 #### f
 
-Type: `integer`<br/>
+Type: `number`<br/>
 Required
 
 Algorithm to calculate `f`<br/>
