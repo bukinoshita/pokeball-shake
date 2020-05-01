@@ -1,0 +1,9 @@
+{
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "testRegex": "/test/.*",
+  "testEnvironment": "node",
+  "moduleFileExtensions": ["ts", "js"],
+  "testPathIgnorePatterns": ["<rootDir>/test/__snapshots__"]
+}
